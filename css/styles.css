@@ -1,0 +1,469 @@
+html {
+    overflow: hidden;
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    font-size: 12px;
+    
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2a96e+0,eb5050+100 */
+    background: #f2a96e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f2a96e 0%, #eb5050 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f2a96e 0%,#eb5050 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f2a96e 0%,#eb5050 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2a96e', endColorstr='#eb5050',GradientType=0 ); /* IE6-9 */
+    
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.content {
+    margin-left: 0;
+}
+.contentButton {
+    text-align: center;
+}
+h1 {
+    margin: 0px;
+    padding: 0px;
+    color: #878787;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+}
+
+#headingPrice, #headingSize, #headingQuantity, #headingColor {
+    cursor: default;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+
+main {
+    margin: 0 auto;
+    
+    width: 100%;
+    height: 90%;
+    max-width: 1024px;
+    min-width: 1024px;
+}
+
+/* HEADER SECTION*/
+header {
+    margin: 0 auto;
+    
+    width: 100%;
+    height: 70px;
+    max-width: 1024px;
+    
+/*    background: lightgray;*/
+}
+
+#logo {
+    background: url("../assets/img/logo_nike.png") 20% 50% no-repeat;
+    background-size: contain;
+    
+    width: 10%;
+    height: 100%;
+    max-height: 100%;
+    float: left;
+    
+}
+
+#menuButtons {
+    float: right;
+    width: 10%;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+}
+
+#buttonMenu {
+    background: url("../assets/img/icon_menu.png") 50% 50% no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 50%;
+    max-height: 50%;
+    float: right;
+    
+    padding-left: 20px;
+}
+#buttonCart {
+    background: url("../assets/img/icon_cart.png")  no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 50%;
+    max-height: 50%;
+    float: right;
+    
+    padding-left: 10px;
+    
+    cursor: pointer;
+}
+
+/* VIEWS SECTION */
+#views {
+    
+    padding-top: 50px;
+    
+    width: 10%;
+    height: 500px;
+    float: left;
+}
+
+.view {
+    margin-top: 10px;
+    background-color: hsla(360, 100%, 100%, 0.2);
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 58px;
+    height: 58px;
+    
+    border-radius: 50%;
+    
+    opacity: 0.7;
+    
+    cursor: pointer;
+}
+
+.viewActive {
+    margin-top: 10px;
+    background-color: hsla(360, 100%, 100%, 0.6);
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 58px;
+    height: 58px;
+    
+    border-radius: 50%;
+    
+    opacity: 1;
+}
+
+.img {
+    
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    max-height: 100%;
+}
+
+
+#view1 {
+    background: url("../assets/img/orange/thumb_view1.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#view2 {
+    background: url("../assets/img/orange/thumb_view2.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#view3 {
+    background: url("../assets/img/orange/thumb_view3.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#view4 {
+    background: url("../assets/img/orange/thumb_view4.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#view5 {
+    background: url("../assets/img/orange/thumb_view5.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#view6 {
+    background: url("../assets/img/orange/thumb_view6.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+/* PRODUCT SELECTION */
+#cardDetail {
+    
+    width: 90%;
+    height: 550px;
+    
+    float: left;
+}
+
+#card {
+    padding: 20px;
+    padding-top: 10px;
+    
+    width: 400px;
+    height: 520;
+    
+    display: inline-block;
+    background-color: white;
+    
+    border-radius: 2%;
+    float: left;
+}
+
+
+
+
+.content {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.sizeContainer {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    height: 50px;
+    
+    z-index: 2;
+}
+.rdo {
+    margin: 0px;
+    margin-top: 8px;
+    margin-right: 4px;
+    padding: 0px;
+    background-color: #F5F5F5;
+    color: #878787;
+    text-align: center;
+    vertical-align:baseline;
+    
+    width: 24px;
+    height: 24px;
+    float: left;
+    
+    border-radius: 50%;
+    border: 2px solid #E6E6E6;
+    line-height: 200%;
+    
+    cursor: pointer;
+    transition-property: margin-top;
+    transition-duration: 0.3s;
+    
+}
+.rdoActive {
+    margin: 0px;
+    margin-top: 4px;
+    margin-right: 4px;
+    padding: 0px;
+    background-color: #FA5B5B;
+    color: #ffffff;
+    text-align: center;
+    vertical-align:baseline;
+    
+    width: 26px;
+    height: 26px;
+    float: left;
+    
+    border-radius: 50%;
+    border: 2px solid #FA5B5B;
+    line-height: 240%;
+    
+    
+    -webkit-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    -moz-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    -o-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    
+    cursor: pointer;
+    
+    transition-property: margin-top;
+    transition-duration: 0.3s;
+}
+
+.rdoColor {
+    margin: 0px;
+    margin-top: 8px;
+    margin-right: 4px;
+    padding: 0px;
+    background-color: #F5F5F5;
+    
+    width: 24px;
+    height: 24px;
+    float: left;
+    
+    border-radius: 50%;
+    border: 2px solid #E6E6E6;
+    line-height: 200%;
+    
+    cursor: pointer;
+    
+    transition-property: margin-top;
+    transition-duration: 0.3s;
+}
+
+.rdoColorActive {
+    margin-top: 4px;
+    margin-right: 4px;
+    background-color: #FA5B5B;
+    
+    width: 30px;
+    height: 30px;
+    float: left;
+    
+    border-radius: 50%;
+    
+    background: url("../assets/img/icon_tick.png") no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    
+    -webkit-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    -moz-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    -o-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    
+    cursor: pointer;
+    transition-property: margin-top;
+    transition-duration: 0.3s;
+}
+
+
+#colorOrange {
+    background-color: #FA5B5B;
+}
+
+#colorGray {
+    background-color: #8d8d8d;
+}
+
+#colorIndigo {
+    background-color: #665BFA;
+}
+
+#colorBlue {
+    background-color: #3EB6E2;
+}
+
+#colorPurple {
+    background-color: #873EE2;
+}
+
+#price {
+    color: #FA5B5B;
+    font-size: 4em;
+    font-weight: 100;
+}
+
+#addToCart {
+    text-transform: uppercase;
+    background-color: #FA5B5B;
+    border-style: none;
+    width: 160px;
+    height: 36px;
+    border-radius: 18px;
+    color: white;
+    
+    font-size: 0.9em;
+    
+    
+    -webkit-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    -moz-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    -o-box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);
+    box-shadow: 0px 6px 16px 1px rgba(250,91,91,0.6);  
+}
+
+#text {
+    padding: 20px;
+    padding-top: 10px;
+    
+    width: auto;
+    height: 520px;
+    
+    float: right;
+    
+    position: relative;
+}
+
+#shoe {
+    background: url("../assets/img/orange/main_view1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    width: 40%;
+    height: 60%;
+    margin-top: 50px;
+    margin-left: 330px;
+    position: relative;
+    z-index: 1;
+    
+    /* TRUE SHADOW */
+    -webkit-filter: drop-shadow(0px 6px 24px 16px rgba(0,0,0,0.4));
+    filter: drop-shadow(6px 24px 16px rgba(0,0,0,0.4));
+}
+
+#text #textTopRight {
+    text-transform: uppercase;
+    width: 280px;
+    text-align: right;
+}
+
+#text #textTopRight #shoeTitle{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 200;
+    
+}
+
+#text #textTopRight #shoeTitle span {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 600;
+    white-space: nowrap;
+}
+#text #textTopRight #category {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    white-space: nowrap;
+    opacity: 0.7;
+}
+#text #textBottomRight {
+    text-align: right;
+    color: white;
+    width: 350px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#text #textBottomRight #description{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 200;
+    opacity: 0.9;
+    
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
